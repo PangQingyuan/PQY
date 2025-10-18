@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dream of the Red Chamber: A Digital Companion</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;500;600&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-gem"></i>
+                <span>The Dream of the Red Chamber</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#characters" class="nav-link">Characters</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#storyline" class="nav-link">Storyline</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#research" class="nav-link">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ai-assistant" class="nav-link">AI Assistant</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero-section">
+                <div class="ink-animation">
+                    <div class="ink-drop"></div>
+                    <div class="ink-drop"></div>
+                    <div class="ink-drop"></div>
+                    <div class="ink-drop"></div>
+                    <div class="ink-drop"></div>
+                </div>
+                <div class="chinese-patterns">
+                    <div class="pattern pattern-1"></div>
+                    <div class="pattern pattern-2"></div>
+                    <div class="pattern pattern-3"></div>
+                </div>
+                <div class="hero-content">
+                    <div class="hero-symbol">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h1 class="hero-title">The Dream of the Red Chamber</h1>
+                    <p class="hero-subtitle">A Dream of Grandeur, A Mirror of Fate</p>
+                    <p class="hero-chinese">红楼梦</p>
+                    <button class="cta-button" onclick="scrollToSection('characters')">
+                        <span>Begin Exploration</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="intro-section">
+                <div class="container">
+                    <div class="intro-text">
+                        <h2>A Masterpiece of World Literature</h2>
+                        <p>The Dream of the Red Chamber stands as one of China's Four Great Classical Novels, a profound exploration of love, family, fate, and the human condition. This digital companion opens the doors to Cao Xueqin's magnificent world, offering English readers an immersive journey through the intricate tapestry of Qing Dynasty society.</p>
+                    </div>
+                    
+                    <div class="feature-cards">
+                        <div class="feature-card" onclick="showSection('characters')">
+                            <div class="card-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Character Genealogy</h3>
+                            <p>Explore the complex relationships and intricate family trees of the Jia, Wang, Shi, and Xue families through interactive visualizations.</p>
+                            <div class="card-decoration">👥</div>
+                        </div>
+                        
+                        <div class="feature-card" onclick="showSection('storyline')">
+                            <div class="card-icon">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <h3>Story Timeline</h3>
+                            <p>Navigate through the 120 chapters with detailed summaries, cultural annotations, and scholarly insights.</p>
+                            <div class="card-decoration">📚</div>
+                        </div>
+                        
+                        <div class="feature-card" onclick="showSection('research')">
+                            <div class="card-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Academic Research</h3>
+                            <p>Access scholarly resources, version comparisons, and the evolution of Redology studies from traditional to modern approaches.</p>
+                            <div class="card-decoration">🎓</div>
+                        </div>
+                        
+                        <div class="feature-card" onclick="showSection('ai-assistant')">
+                            <div class="card-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>AI Reading Companion</h3>
+                            <p>Engage with our intelligent assistant for personalized guidance through characters, plots, poetry, and cultural contexts.</p>
+                            <div class="card-decoration">🤖</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlights-section">
+                <div class="container">
+                    <h2>Today's Highlights</h2>
+                    <div class="highlights-carousel">
+                        <div class="highlight-item active">
+                            <div class="highlight-image">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h3>Character of the Day: Jia Baoyu</h3>
+                                <p>The protagonist whose journey from innocence to enlightenment mirrors the novel's central themes of illusion and reality.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <div class="highlight-image">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h3>Chapter Focus: The Grand View Garden</h3>
+                                <p>Explore the symbolic significance of this paradisiacal retreat and its role in the characters' emotional development.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <div class="highlight-image">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h3>Latest Research: Digital Humanities</h3>
+                                <p>Discover how modern technology is revolutionizing the study of classical Chinese literature.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Characters Section -->
+        <section id="characters" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Character Genealogy</h2>
+                    <p>Navigate the intricate web of relationships in the Jia family and beyond</p>
+                </div>
+                
+                <div class="characters-layout">
+                    <div class="character-tree">
+                        <div class="tree-controls">
+                            <div class="filter-group">
+                                <label>Filter by Family:</label>
+                                <select id="family-filter">
+                                    <option value="all">All Families</option>
+                                    <option value="jia">Jia Family</option>
+                                    <option value="wang">Wang Family</option>
+                                    <option value="shi">Shi Family</option>
+                                    <option value="xue">Xue Family</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label>Filter by Generation:</label>
+                                <select id="generation-filter">
+                                    <option value="all">All Generations</option>
+                                    <option value="dai">Dai Generation</option>
+                                    <option value="wen">Wen Generation</option>
+                                    <option value="yu">Yu Generation</option>
+                                    <option value="cao">Cao Generation</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="tree-visualization" style="overflow: visible; min-height: 600px;">
+                            <svg id="character-tree-svg" width="100%" height="600" style="min-height: 600px; overflow: visible;"></svg>
+                        </div>
+                    </div>
+                    
+                    <div class="character-details">
+                        <div class="details-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                            <h3>Select a Character</h3>
+                            <p>Click on any character in the family tree to view detailed information</p>
+                        </div>
+                        
+                        <div class="character-info" id="character-info" style="display: none;">
+                            <div class="character-portrait">
+                                <img id="character-image" src="" alt="" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary-red);">
+                            </div>
+                            <div class="character-basic">
+                                <h3 id="character-name"></h3>
+                                <p id="character-courtesy-name"></p>
+                                <p id="character-judgment"></p>
+                            </div>
+                            <div class="character-relationships">
+                                <h4>Relationships</h4>
+                                <div id="character-relationships"></div>
+                            </div>
+                            <div class="character-timeline">
+                                <h4>Key Events</h4>
+                                <div id="character-timeline"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Storyline Section -->
+        <section id="storyline" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Story Timeline</h2>
+                    <p>Explore the narrative journey through time and chapters</p>
+                </div>
+                
+                <div class="storyline-controls">
+                    <div class="view-toggle">
+                        <button class="toggle-btn active" data-view="timeline">Timeline View</button>
+                        <button class="toggle-btn" data-view="chapters">Chapter List</button>
+                    </div>
+                </div>
+                
+                <div class="timeline-view" id="timeline-view">
+                    <div class="timeline-container">
+                        <div class="timeline-line"></div>
+                        <div class="timeline-events" id="timeline-events">
+                            <!-- Timeline events will be dynamically generated -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chapters-view" id="chapters-view" style="display: none;">
+                    <div class="chapters-grid" id="chapters-grid">
+                        <!-- Chapters will be dynamically generated -->
+                    </div>
+                </div>
+                
+                <div class="chapter-detail" id="chapter-detail" style="display: none;">
+                    <div class="detail-header">
+                        <button class="back-btn" onclick="hideChapterDetail()">
+                            <i class="fas fa-arrow-left"></i> Back to Timeline
+                        </button>
+                        <h3 id="detail-chapter-title"></h3>
+                    </div>
+                    <div class="detail-content">
+                        <div class="detail-summary">
+                            <h4>Summary</h4>
+                            <p id="detail-summary-text"></p>
+                        </div>
+                        <div class="detail-scenes">
+                            <h4>Key Scenes</h4>
+                            <div id="detail-scenes-list"></div>
+                        </div>
+                        <div class="detail-characters">
+                            <h4>Characters in this Chapter</h4>
+                            <div id="detail-characters-list"></div>
+                        </div>
+                        <div class="detail-annotations">
+                            <h4>Cultural Annotations</h4>
+                            <div id="detail-annotations-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Academic Research</h2>
+                    <p>Dive deep into scholarly studies and textual analysis</p>
+                </div>
+                
+                <div class="research-tabs">
+                    <button class="tab-btn active" data-tab="versions">Version Studies</button>
+                    <button class="tab-btn" data-tab="history">Redology History</button>
+                    <button class="tab-btn" data-tab="resources">Academic Resources</button>
+                </div>
+                
+                <div class="tab-content active" id="versions-tab">
+                    <h3>Textual Versions and Editions</h3>
+                    <div class="version-comparison">
+                        <div class="version-tree">
+                            <h4>Version Genealogy</h4>
+                            <div class="tree-diagram" id="version-tree-diagram">
+                                <!-- Version tree will be dynamically generated -->
+                            </div>
+                        </div>
+                        
+                        <div class="version-details">
+                            <h4>Version Comparison</h4>
+                            <div class="version-selector">
+                                <button class="version-btn active" data-version="gengchen">Gengchen Edition</button>
+                                <button class="version-btn" data-version="cheng-a">Cheng A Edition</button>
+                                <button class="version-btn" data-version="cheng-b">Cheng B Edition</button>
+                                <button class="version-btn" data-version="jiaxu">Jiaxu Edition</button>
+                            </div>
+                            <div class="version-info" id="version-info">
+                                <!-- Version details will be dynamically loaded -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="history-tab">
+                    <h3>Evolution of Redology Studies</h3>
+                    <div class="history-timeline" id="history-timeline">
+                        <!-- History periods will be dynamically generated -->
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="resources-tab">
+                    <h3>Academic Resources Database</h3>
+                    <div class="search-tools">
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search academic papers, books, and articles...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="filter-options">
+                            <select>
+                                <option>All Topics</option>
+                                <option>Character Analysis</option>
+                                <option>Textual Studies</option>
+                                <option>Cultural Context</option>
+                                <option>Translation Studies</option>
+                            </select>
+                            <select>
+                                <option>All Authors</option>
+                                <option>Chinese Scholars</option>
+                                <option>Western Scholars</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="resources-list" id="resources-list">
+                        <!-- Resources will be dynamically generated -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Assistant Section -->
+        <section id="ai-assistant" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>AI Reading Companion</h2>
+                    <p>Your intelligent guide through the world of The Dream of the Red Chamber</p>
+                </div>
+                
+                <div class="assistant-demo">
+                    <div class="demo-chat">
+                        <div class="chat-header">
+                            <div class="assistant-avatar">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <div class="assistant-info">
+                                <h4>The Red Chamber Companion</h4>
+                                <span class="status">Online</span>
+                            </div>
+                        </div>
+                        
+                        <div class="chat-messages">
+                            <div class="message assistant-message">
+                                <div class="message-content">
+                                    <p>Hello! I'm your Red Chamber Companion. I can help you understand characters, explain plot developments, interpret poetry, and provide cultural context. What would you like to know?</p>
+                                </div>
+                            </div>
+                            
+                            <div class="message user-message">
+                                <div class="message-content">
+                                    <p>Can you explain the significance of the Grand View Garden?</p>
+                                </div>
+                            </div>
+                            
+                            <div class="message assistant-message">
+                                <div class="message-content">
+                                    <p>The Grand View Garden serves as a microcosm of the Jia family's world and a symbol of their fleeting prosperity. It's where the young characters experience their most carefree moments, but also where their romantic entanglements and eventual tragedies unfold. The garden represents both paradise and prison, reflecting the novel's central themes of illusion versus reality.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="quick-questions">
+                            <h5>Quick Questions:</h5>
+                            <div class="question-buttons">
+                                <button class="quick-btn">Explain Jia Baoyu's prophecy</button>
+                                <button class="quick-btn">What is the significance of Daiyu burying flowers?</button>
+                                <button class="quick-btn">Compare Baochai and Daiyu's personalities</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="assistant-features">
+                        <h3>What I Can Help With:</h3>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <h4>Character Analysis</h4>
+                                    <p>Deep insights into personalities, motivations, and relationships</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <i class="fas fa-book"></i>
+                                <div>
+                                    <h4>Plot Explanation</h4>
+                                    <p>Clarify complex storylines and thematic connections</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <i class="fas fa-feather-alt"></i>
+                                <div>
+                                    <h4>Poetry Interpretation</h4>
+                                    <p>Translate and explain the beautiful verses throughout the novel</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <i class="fas fa-landmark"></i>
+                                <div>
+                                    <h4>Cultural Context</h4>
+                                    <p>Understand Qing Dynasty customs, rituals, and social structures</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- AI Assistant Floating Button -->
+    <div class="ai-assistant-btn" id="ai-assistant-btn">
+        <i class="fas fa-gem"></i>
+        <span>Ask Me Anything</span>
+    </div>
+
+    <!-- AI Chat Modal -->
+    <div class="ai-chat-modal" id="ai-chat-modal">
+        <div class="chat-modal-content">
+            <div class="chat-modal-header">
+                <div class="assistant-info">
+                    <i class="fas fa-gem"></i>
+                    <span>The Red Chamber Companion</span>
+                    <div class="api-status" id="api-status">
+                        <i class="fas fa-circle" id="api-indicator"></i>
+                        <span id="api-text">Offline Mode</span>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button class="api-config-btn" onclick="showAPIConfig()" title="Configure API">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                    <button class="close-chat" onclick="closeAIChat()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="chat-modal-messages" id="chat-modal-messages">
+                <div class="message assistant-message">
+                    <div class="message-content">
+                        <p>Hello! I'm your Red Chamber Companion powered by 智谱清言 AI. I can help you understand characters, explain plot developments, interpret poetry, and provide cultural context with enhanced intelligence. What would you like to know?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-to-bottom" id="scroll-to-bottom" onclick="scrollToBottom()">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            
+            <div class="chat-modal-input">
+                <input type="text" id="chat-input" placeholder="Ask me anything about The Dream of the Red Chamber...">
+                <button onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- API Configuration Modal -->
+    <div class="api-config-modal" id="api-config-modal">
+        <div class="api-config-content">
+            <div class="api-config-header">
+                <h3>智谱清言 API Configuration</h3>
+                <button class="close-api-config" onclick="hideAPIConfig()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="api-config-body">
+                <div class="api-info">
+                    <h4>关于智谱清言 API</h4>
+                    <p>智谱清言提供先进的AI能力，为《红楼梦》相关问题提供增强回答。配置您的API密钥以解锁：</p>
+                    <ul>
+                        <li>更详细和准确的回答</li>
+                        <li>更好地理解复杂问题</li>
+                        <li>增强的文化和历史背景</li>
+                        <li>改进的文学分析</li>
+                    </ul>
+                </div>
+                
+                <div class="api-setup">
+                    <h4>配置说明</h4>
+                    <ol>
+                        <li>访问 <a href="https://open.bigmodel.cn" target="_blank">智谱清言开放平台</a></li>
+                        <li>创建账户并获取您的API密钥</li>
+                        <li>将API密钥粘贴到下方</li>
+                        <li>点击"保存配置"</li>
+                    </ol>
+                </div>
+                
+                <div class="api-input">
+                    <label for="api-key-input">API 密钥:</label>
+                    <input type="password" id="api-key-input" placeholder="输入您的智谱清言API密钥">
+                    <button onclick="saveAPIConfig()" class="save-api-btn">
+                        <i class="fas fa-save"></i> 保存配置
+                    </button>
+                </div>
+                
+                <div class="api-status-info">
+                    <div class="status-item">
+                        <i class="fas fa-circle offline"></i>
+                        <span>离线模式：使用内置回答</span>
+                    </div>
+                    <div class="status-item">
+                        <i class="fas fa-circle online"></i>
+                        <span>在线模式：使用智谱清言API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>The Dream of the Red Chamber</h4>
+                    <p>A Digital Companion for English Readers</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Digital Library Collections</a></li>
+                        <li><a href="#">Scholarly Translations</a></li>
+                        <li><a href="#">Cultural Context Guides</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Contributors</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Acknowledgments</h4>
+                    <p>Special thanks to translators, scholars, and digital humanities researchers who have made this project possible.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Dream of the Red Chamber Digital Companion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
